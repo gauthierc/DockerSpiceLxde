@@ -13,6 +13,7 @@ run        apt-get update && apt-get -y install software-properties-common
 run	   add-apt-repository ppa:serge-hallyn/virt &&  apt-get update
 run        DEBIAN_FRONTEND=noninteractive  apt-get upgrade -y 
 run	   DEBIAN_FRONTEND=noninteractive  apt-get -y install xserver-xspice libpam-ldapd lxde-core lxterminal
+run        DEBIAN_FRONTEND=noninteractive  apt-get -y install lxrandr x11-xserver-utils 
 ADD	   spiceqxl.xorg.conf /root/	   
 ADD 	   run.sh	/root/
 VOLUME	   ["/home"]

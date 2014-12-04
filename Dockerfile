@@ -15,6 +15,8 @@ run        DEBIAN_FRONTEND=noninteractive  apt-get upgrade -y
 run	   DEBIAN_FRONTEND=noninteractive  apt-get -y install xserver-xspice libpam-ldapd lxde-core lxterminal
 run        DEBIAN_FRONTEND=noninteractive  apt-get -y install lxrandr x11-xserver-utils 
 ADD	   spiceqxl.xorg.conf /etc/X11/	   
+ADD	   resolution.desktop /etc/xdg/autostart/
+ADD	   keyboard.desktop /etc/xdg/autostart/
 ADD 	   run.sh	/root/
 VOLUME	   ["/home"]
 expose     5900

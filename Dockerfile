@@ -1,4 +1,4 @@
-# This file describes how to build Plone into a runnable linux container with all dependencies installed
+# Minimal lxde desktop with xspice-server 
 # To build:
 # 1) Install docker (http://docker.io)
 # 2) Run:

@@ -14,6 +14,7 @@ run	   add-apt-repository ppa:serge-hallyn/virt &&  apt-get update
 run        DEBIAN_FRONTEND=noninteractive  apt-get upgrade -y 
 run	   DEBIAN_FRONTEND=noninteractive  apt-get -y install xserver-xspice libpam-ldapd lxde-core lxterminal
 run        DEBIAN_FRONTEND=noninteractive  apt-get -y install lxrandr x11-xserver-utils 
+run        /usr/sbin/locale-gen fr_FR.UTF-8
 ADD	   spiceqxl.xorg.conf /etc/X11/	   
 ADD	   resolution.desktop /etc/xdg/autostart/
 ADD	   keyboard.desktop /etc/xdg/autostart/

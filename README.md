@@ -5,7 +5,7 @@ This repository contains **Dockerfile** of [Ubuntu Desktop (LXDE)](http://lxde.o
 
 ### Base Docker Image
 
-* [ubuntu:14.04](https://registry.hub.docker.com/_/ubuntu/)
+* [ubuntu:20.04](https://registry.hub.docker.com/_/ubuntu/)
 
 
 ### Installation
